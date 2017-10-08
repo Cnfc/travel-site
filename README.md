@@ -15,6 +15,3 @@ description": "",
   "url": "https://github.com/Cnfc/travel-site/issues"
 },
 "homepage": "https://github.com/Cnfc/travel-site#readme"
-
-
-*/
