@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Cnfc/travel-site#readme",
   "dependencies": {
+    "browser-sync": "^2.18.13",
     "jquery": "^3.2.1",
     "normalize.css": "^7.0.0",
     "postcss-import": "^11.0.0",
