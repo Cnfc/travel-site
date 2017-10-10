@@ -1,4 +1,6 @@
 .wrapper {
+  background-color: green;
+  overflow: hidden;
   padding-right: 18px;
   padding-left: 18px;
   max-width: 1200px;

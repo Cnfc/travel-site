@@ -460,6 +460,11 @@ img {
   height: auto;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .large-hero {
   border-bottom: 10px solid #2f5572;
   position: relative;
@@ -555,6 +560,8 @@ img {
   }
 
 .wrapper {
+  background-color: green;
+  overflow: hidden;
   padding-right: 18px;
   padding-left: 18px;
   max-width: 1200px;
@@ -650,3 +657,34 @@ font-size: 1.9rem;
   <source sizes="320px" srcset="assets/images/our-start-portrait-i.jpg 382w, assets/images/our-start-hi-dpi-i.jpg 764w" media="(min-width: 800px)">
   <img srcset="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w" alt="Our founder">
 </picture>*/
+
+.row {
+
+  background-color: yellow;
+  }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.row--gutters > div {
+    padding-right: 65px;
+  }
+
+.row--gutters {
+    margin-right: -65px;
+  }
+
+@media (min-width: 800px) {
+    .row__medium-4 {
+      float: left;
+      width: 33.33%;
+    }
+
+    .row__medium-8 {
+      float: left;
+      width: 66.66%;
+    }
+  }
