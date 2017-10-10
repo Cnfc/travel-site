@@ -465,6 +465,10 @@ img {
           box-sizing: border-box;
 }
 
+a {
+  color: #d59541;
+}
+
 .large-hero {
   border-bottom: 10px solid #2f5572;
   position: relative;
@@ -662,6 +666,10 @@ font-size: 1.9rem;
     margin-bottom: 1.6em;
   }
 
+.headline--no-t-margin {
+    margin: 0;
+  }
+
 /*
 <picture>
   <source sizes="404px" srcset="assets/images/our-start.jpg 404w, assets/images/our-start-hi-dpi.jpg 808w" media="(min-width: 1020px)">
@@ -684,11 +692,21 @@ font-size: 1.9rem;
     padding-right: 65px;
   }
 
+.row--row__b-margin-medium{
+    margin-bottom: 1rem;
+
+  }
+
 .row--gutters {
     margin-right: -65px;
   }
 
 @media (min-width: 800px) {
+
+    .row--row__b-margin-medium{
+      margin-bottom: 0;
+    }
+
     .row__medium-4 {
       float: left;
       width: 33.33%;
@@ -706,4 +724,21 @@ font-size: 1.9rem;
     .row__medium-8--smaller {
       width: 63%;
     }
+  }
+
+.generic-content-container p {
+    line-height: 1.65;
+    margin: 1.8rem 0;
+  }
+
+@media (min-width: 530px) {
+
+.generic-content-container p {
+      font-size: 1.125rem
+  }
+  }
+
+.generic-content-container p a {
+    font-weight: 700;
+
   }

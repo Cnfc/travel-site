@@ -7,10 +7,20 @@
     padding-right: 65px;
   }
 
+  &--row__b-margin-medium{
+    margin-bottom: 1rem;
+
+  }
+
   &--gutters {
     margin-right: -65px;
   }
   @mixin atMedium {
+
+    &--row__b-margin-medium{
+      margin-bottom: 0;
+    }
+
     &__medium-4 {
       float: left;
       width: 33.33%;
