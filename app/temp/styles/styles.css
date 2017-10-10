@@ -562,11 +562,91 @@ img {
   margin-right: auto;
 }
 
-.page-section {
-  padding: 4.5rem 0;
+.wrapper--medium {
+    max-width: 976px;
+
+  }
+
+.wrapper .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+
 }
+
+.page-section {
+  padding: 1.2rem 0;
+}
+
+@media (min-width: 800px) {
+
+.page-section {
+    padding: 4.5rem 0
+}
+  }
 
 .page-section--blue {
     background: #2f5572;
     color: #fff;
   }
+
+.headline {
+font-size: 1.9rem;
+  font-weight: 300;
+
+  color: #2f5572;
+}
+
+@media (min-width: 530px) {
+
+.headline {
+    font-size: 2.875rem
+}
+  }
+
+.headline--centered {
+    text-align: center;
+  }
+
+.headline--orange {
+    color: orange;
+  }
+
+.headline--small {
+    font-size: 1.2rem;
+  }
+
+@media (min-width: 530px) {
+
+.headline--small {
+      font-style: 1.875rem
+  }
+  }
+
+.headline--narrow {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.headline--light {
+    font-weight: 100;
+  }
+
+.headline strong{
+    font-weight: 400;
+  }
+
+.headline--b-margin-small {
+    margin-bottom: .5em;
+  }
+
+.headline--b-margin-large {
+    margin-bottom: 1.6em;
+  }
+
+/*
+<picture>
+  <source sizes="404px" srcset="assets/images/our-start.jpg 404w, assets/images/our-start-hi-dpi.jpg 808w" media="(min-width: 1020px)">
+  <source sizes="320px" srcset="assets/images/our-start-portrait-i.jpg 382w, assets/images/our-start-hi-dpi-i.jpg 764w" media="(min-width: 800px)">
+  <img srcset="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w" alt="Our founder">
+</picture>*/
