@@ -2,6 +2,10 @@
 
   @mixin clearfix;
 
+  &--t-padding {
+    padding-top: 80px;
+  }
+
   &--gutters {
     margin-right: -65px;
   }
@@ -16,38 +20,80 @@
   &--gutters-large > div{
     padding-right: 100px;
   }
+  &--gutters-small {
+    margin-right: -45px;
+  }
+  &--gutters-small > div {
+    padding-right: 45px;
+  }
 
   &--row__b-margin-medium{
     margin-bottom: 1rem;
-
   }
   @mixin atMedium {
-
     &--row__b-margin-medium{
       margin-bottom: 0;
     }
+  }
 
-    &__medium-4 {
-      float: left;
-      width: 33.33%;
+  &__medium-4 {
+    float: left;
+    width: 33.33%;
+  }
+
+  &__medium-4--larger {
+    width: 37%;
+  }
+
+  &__medium-6 {
+    float: left;
+    width: 50%;
+  }
+
+  &__medium-8 {
+    float: left;
+    width: 66.66%;
+  }
+
+  &__medium-8--smaller {
+    width: 63%;
+  }
+/*BEGIN EQUAL HEIGHT RULES*/
+
+  &--equal-height-at-medium {
+    @mixin atMedium {
+      display: flex;
     }
 
-    &__medium-4--larger {
-      width: 37%;
+    & > div {
+      float: none;
+      display: flex;
     }
-    &__medium-6 {
-      float: left;
-      width: 50%;
-    }
-
-    &__medium-8 {
-      float: left;
-      width: 66.66%;
-    }
-
-    &__medium-8--smaller {
-      width: 63%;
-    }
-
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

@@ -12,6 +12,16 @@
 
   }
 
+  &--no-padding-until-midium {
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin atMedium {
+      padding-right: 18px;
+      padding-left: 18px;
+    }
+  }
+
 
   .wrapper {
     padding-left: 0;
