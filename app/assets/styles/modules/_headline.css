@@ -13,13 +13,13 @@ font-size: 1.9rem;
   }
 
   &--orange {
-    color: orange;
+    color: @mainOrange;
   }
   &--small {
     font-size: 1.2rem;
 
     @mixin atSmall {
-      font-style: 1.875rem;
+      font-size: 1.875rem;
     }
   }
   &--narrow {
@@ -43,7 +43,7 @@ font-size: 1.9rem;
   }
 
   &--no-t-margin {
-    margin: 0;
+    margin-top: 0;
   }
 }
 

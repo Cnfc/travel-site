@@ -11,7 +11,7 @@
     max-width: 976px;
   }
 
-  &--no-padding-until-midium {
+  &--no-padding-until-medium {
     padding-left: 0;
     padding-right: 0;
 
@@ -21,9 +21,7 @@
     }
   }
 
-
-
-  &--no-padding-until-Large {
+  &--no-padding-until-large {
     padding-left: 0;
     padding-right: 0;
 
@@ -37,13 +35,12 @@
   .wrapper {
     padding-left: 0;
     padding-right: 0;
-
   }
 
   &--b-margin {
     margin-bottom: 1rem;
 
-    @mixin atSmall{
+    @mixin atSmall {
       margin-bottom: 3.875rem;
     }
   }

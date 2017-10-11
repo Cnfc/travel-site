@@ -27,7 +27,7 @@
     padding-right: 45px;
   }
 
-  &--row__b-margin-medium{
+  &__b-margin-medium{
     margin-bottom: 1rem;
   }
   @mixin atMedium {
@@ -60,7 +60,7 @@
   }
 
   @mixin atLarge {
-    &--row__b-margin-large{
+    &__b-margin-large{
       margin-bottom: 0;
     }
 

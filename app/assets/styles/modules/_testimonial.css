@@ -22,7 +22,7 @@
   }
 
   &__title{
-    color: @mainBlue;
+    color: $mainBlue;
     text-align: center;
     font-size: 1.5rem;
     font-weight: 500;
