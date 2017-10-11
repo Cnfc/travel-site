@@ -559,6 +559,8 @@ a {
 
 .btn--large {
       font-size: 1.25rem
+      /*margin: 0;
+      left: auto;*/
   }
   }
 
