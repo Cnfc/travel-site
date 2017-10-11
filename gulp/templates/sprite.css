@@ -1,9 +1,22 @@
+
+
+
+
+
+/*DO NOT EDIT MODULES/_SPRITE DIRECTORY AS IT IS GENERATED AUTOMATICALLY BY GULP
+iNSTEAD EDIT GULP/TEMPLATES/SPRITE*/
+
+
 {{#shapes}}
+  {{#first}}
+    .icon {
+      background-image: url('/assets/images/sprites/{{{sprite}}}');
+  }
+  {{/first}}
+
   .icon--{{base}} {
     width: {{width.outer}}px;
     height: {{height.outer}}px;
-    background-image: url('/temp/sprite/css/{{{sprite}}}') ;
     background-position: {{position.relative.xy}};
   }
 {{/shapes}}
- 

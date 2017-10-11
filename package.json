@@ -18,6 +18,8 @@
   "homepage": "https://github.com/Cnfc/travel-site#readme",
   "dependencies": {
     "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp-rename": "^1.2.2",
     "gulp-svg-sprite": "^1.3.1",
     "jquery": "^3.2.1",
     "normalize.css": "^7.0.0",
