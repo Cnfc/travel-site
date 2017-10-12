@@ -1149,8 +1149,8 @@ iNSTEAD EDIT GULP/TEMPLATES/SPRITE*/
     left: 50%;
     -webkit-transform: translateX(-50%) scale(.8);
             transform: translateX(-50%) scale(.8);
-    -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
     background-color: #2f5572;
     padding: 25px 36px;
   }
@@ -1175,7 +1175,15 @@ iNSTEAD EDIT GULP/TEMPLATES/SPRITE*/
     position: absolute;
     top: 10px;
     right: 10px;
-    
+
+  }
+
+@media (min-width: 800px) {
+
+.site-header__menu-icon {
+      display: none
+
+  }
   }
 
 .site-header__menu-content {
