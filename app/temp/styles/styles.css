@@ -1141,6 +1141,8 @@ iNSTEAD EDIT GULP/TEMPLATES/SPRITE*/
 
 .site-header__btn-container {
     float: right;
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
   }
 
 .site-header__logo {
