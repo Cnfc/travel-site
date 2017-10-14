@@ -18,11 +18,21 @@ gulp.task('watch', function() {
     gulp.start('cssInject');
     browserSync.reload();
   });
+
+  watch('./app/assets/script/**/*.js', function() {
+    gulp.start('scriptsRefresh');
+  })
 });
+
+
 
 
 
 gulp.task('cssInject', ['styles'], function() {
   return gulp.src('./app/temp/styles/styles.css') //May be a problemwith styles
     .pipe(browserSync.stream());
+});
+
+gulp.task('scriptsRefresh', ['scripts'], function() {
+  browserSync.reload();
 });

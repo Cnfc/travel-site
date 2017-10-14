@@ -10346,6 +10346,7 @@ return jQuery;
 var $ = __webpack_require__(1);
 var Person = __webpack_require__(0);
 
+alert('LAALLALALAL');
 
 var john = new Person("John Doe", "blue");
 john.greet();
@@ -10353,7 +10354,7 @@ john.greet();
 var jane = new Person("Jane Doe", "green");
 jane.greet();
 
-$("h1").remove(); 
+$("h1").remove();
 
 
 /***/ }
