@@ -9,37 +9,42 @@
   &--gutters {
     margin-right: -65px;
   }
+  
   &--gutters-large {
     margin-right: -100px;
   }
 
+  &--gutters-small {
+    margin-right: -45px;
+  }
 
   &--gutters > div {
     padding-right: 65px;
   }
-  &--gutters-large > div{
+
+  &--gutters-large > div {
     padding-right: 100px;
   }
-  &--gutters-small {
-    margin-right: -45px;
-  }
+
   &--gutters-small > div {
     padding-right: 45px;
   }
 
-  &__b-margin-medium{
+  &__b-margin-until-medium {
     margin-bottom: 1rem;
   }
-  @mixin atMedium {
-    &--row__b-margin-medium{
-      margin-bottom: 0;
-    }
 
+  @mixin atMedium {
+ 
+    &__b-margin-until-medium {
+      margin-bottom: 1rem;
+    } 
+  
     &__medium-4 {
       float: left;
       width: 33.33%;
     }
-
+    
     &__medium-4--larger {
       width: 37%;
     }
@@ -60,15 +65,16 @@
   }
 
   @mixin atLarge {
-    &__b-margin-large{
-      margin-bottom: 0;
-    }
-
+ 
+    &__b-margin-until-large{
+      margin-bottom: 1rem;
+    } 
+  
     &__large-4 {
       float: left;
       width: 33.33%;
     }
-
+    
     &__large-4--larger {
       width: 37%;
     }
@@ -87,7 +93,7 @@
       width: 63%;
     }
   }
-/*BEGIN EQUAL HEIGHT RULES*/
+  /* begin equal height rules */
 
   &--equal-height-at-medium {
     @mixin atMedium {
@@ -100,41 +106,16 @@
     }
   }
 
-
-    &--equal-height-at-large {
-      @mixin atLarge {
-        display: flex;
-      }
-
-      & > div {
-        float: none;
-        display: flex;
-      }
+  &--equal-height-at-large{
+    @mixin atLarge {
+      display: flex;
     }
+
+    & > div {
+      float: none;
+      display: flex;
+    }
+  }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**/

@@ -1,37 +1,33 @@
 .wrapper {
-  /*background-color: green;*/
   overflow: hidden;
-  padding-right: 18px;
   padding-left: 18px;
-  max-width: 1200px;
+  padding-right: 18px;
+  max-width: 1036px; /* this is 1200px in the tutorial */
   margin-left: auto;
   margin-right: auto;
 
   &--medium {
-    max-width: 976px;
+    max-width: 776px; /* this is 976px in the tutorial */
   }
-
+  
   &--no-padding-until-medium {
     padding-left: 0;
     padding-right: 0;
 
     @mixin atMedium {
-      padding-right: 18px;
       padding-left: 18px;
+      padding-right: 18px;
     }
   }
-
-  &--no-padding-until-large {
+  &--no-padding-until-large{
     padding-left: 0;
     padding-right: 0;
 
     @mixin atLarge {
-      padding-right: 18px;
       padding-left: 18px;
+      padding-right: 18px;
     }
   }
-
-
   .wrapper {
     padding-left: 0;
     padding-right: 0;
@@ -45,3 +41,4 @@
     }
   }
 }
+

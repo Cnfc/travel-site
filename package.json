@@ -1,40 +1,27 @@
 {
-  "name": "travel-site",
+  "name": "tutorial-site",
   "version": "1.0.0",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Cnfc/travel-site.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Cnfc/travel-site/issues"
-  },
-  "homepage": "https://github.com/Cnfc/travel-site#readme",
   "dependencies": {
-    "browser-sync": "^2.18.13",
-    "del": "^3.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-svg-sprite": "^1.3.1",
     "jquery": "^3.2.1",
-    "normalize.css": "^7.0.0",
-    "postcss-hexrgba": "^1.0.0",
-    "postcss-import": "^11.0.0",
-    "postcss-mixins": "^6.1.1",
-    "postcss-nested": "^2.1.2"
+    "normalize.css": "^6.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.5",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
+    "autoprefixer": "^6.7.7",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
     "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
-    "gulp-postcss": "^7.0.0",
+    "gulp-postcss": "^6.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-svg-sprite": "^1.3.1",
     "gulp-watch": "^4.3.11",
-    "postcss-simple-vars": "^4.1.0",
-    "webpack": "^2.2.0-rc.0"
+    "postcss-hexrgba": "^0.2.1",
+    "postcss-import": "^9.1.0",
+    "postcss-mixins": "^5.4.1",
+    "postcss-nested": "^1.0.1",
+    "postcss-simple-vars": "^3.1.0",
+    "webpack": "^2.4.1"
   }
 }

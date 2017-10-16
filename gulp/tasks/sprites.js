@@ -1,12 +1,12 @@
 var gulp = require('gulp'),
 svgSprite = require('gulp-svg-sprite'),
 rename = require('gulp-rename'),
-del = require('del');
+del = require('del');  
 
 var config = {
   mode: {
     css: {
-      sprite: 'sprite.svg',
+      sprite: 'sprite.svg', 
       render: {
         css: {
           template: './gulp/templates/sprite.css'
@@ -42,3 +42,4 @@ gulp.task('endClean', ['copySpriteGraphic', 'copySpriteCSS'], function(){
 });
 
 gulp.task('icons', ['beginClean', 'createSprite', 'copySpriteGraphic', 'copySpriteCSS', 'endClean']);
+

@@ -1,11 +1,10 @@
 .headline {
-font-size: 1.9rem;
+  font-size: 1.9rem;
   font-weight: 300;
-
   color: $mainBlue;
 
   @mixin atSmall {
-    font-size: 2.875rem;
+  font-size: 2.875rem;
   }
 
   &--centered {
@@ -13,15 +12,18 @@ font-size: 1.9rem;
   }
 
   &--orange {
-    color: @mainOrange;
+    color: $mainOrange;
   }
+
   &--small {
     font-size: 1.2rem;
-
+    
     @mixin atSmall {
       font-size: 1.875rem;
     }
   }
+
+
   &--narrow {
     max-width: 500px;
     margin-left: auto;
@@ -31,9 +33,7 @@ font-size: 1.9rem;
   &--light {
     font-weight: 100;
   }
-  strong{
-    font-weight: 400;
-  }
+
   &--b-margin-small {
     margin-bottom: .5em;
   }
@@ -46,22 +46,3 @@ font-size: 1.9rem;
     margin-top: 0;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-<picture>
-  <source sizes="404px" srcset="assets/images/our-start.jpg 404w, assets/images/our-start-hi-dpi.jpg 808w" media="(min-width: 1020px)">
-  <source sizes="320px" srcset="assets/images/our-start-portrait-i.jpg 382w, assets/images/our-start-hi-dpi-i.jpg 764w" media="(min-width: 800px)">
-  <img srcset="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w" alt="Our founder">
-</picture>*/
