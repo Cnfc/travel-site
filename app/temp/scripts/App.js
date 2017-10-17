@@ -95,7 +95,6 @@ var MobileMenu = function () {
     this.menuIcon = (0, _jquery2.default)(".site-header__menu-icon");
     this.menuContent = (0, _jquery2.default)(".site-header__menu-content");
     this.events();
-    alert("test menu");
   }
 
   _createClass(MobileMenu, [{
