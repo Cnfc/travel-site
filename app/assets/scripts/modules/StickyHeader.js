@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoints';
+import smoothScroll from 'jquery-smooth-scroll';
 
 
 class StickyHeader {
@@ -7,6 +8,14 @@ class StickyHeader {
     this.siteHeader = $(".site-header");
     this.headerTriggerElement = $(".large-hero__title");
     this.CreateHeaderWaypoint();
+    this.pageSection = $(".page-section");
+    this.headerLinks = $(".primary-nav a");
+    this.createPageSectionWaypoints();
+    this.addSmoothScrolling();
+  }
+
+  addSmoothScrolling() {
+    this.headerLinks.smoothScroll();
   }
 
   CreateHeaderWaypoint() {
@@ -24,6 +33,36 @@ class StickyHeader {
     });
   }
 
+  createPageSectionWaypoints() {
+    var that = this;
+    this.pageSection.each(function() {
+      var currentPageSection = this;
+      new Waypoint({
+        element: currentPageSection,
+        handler: function(direction) {
+        if (direction == "down") {
+          var matchingHeadLink = currentPageSection.getAttribute("data-matching-link");
+          that.headerLinks.removeClass("is-current-link");
+          $(matchingHeadLink).addClass("is-current-link");
+          }
+        },
+        offset: "18%"
+      });
 
+      new Waypoint({
+        element: currentPageSection,
+        handler: function(direction) {
+        if (direction == "up") {
+          var matchingHeadLink = currentPageSection.getAttribute("data-matching-link");
+          that.headerLinks.removeClass("is-current-link");
+          $(matchingHeadLink).addClass("is-current-link");
+          }
+        },
+        offset: "-40%"
+      });
+
+
+    });
+  }
 }
 export default StickyHeader;
