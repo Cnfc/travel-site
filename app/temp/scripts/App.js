@@ -11169,14 +11169,23 @@ var StickyHeader = function () {
     _classCallCheck(this, StickyHeader);
 
     this.siteHeader = (0, _jquery2.default)(".site-header");
+    this.headerTriggerElement = (0, _jquery2.default)(".large-hero__title");
+    this.CreateHeaderWaypoint();
   }
 
   _createClass(StickyHeader, [{
     key: 'CreateHeaderWaypoint',
     value: function CreateHeaderWaypoint() {
+      var that = this;
       new Waypoint({
-        element: x
-
+        element: this.headerTriggerElement[0],
+        handler: function handler(direction) {
+          if (direction == "down") {
+            that.siteHeader.addClass("site-header--dark");
+          } else {
+            that.siteHeader.removeClass("site-header--dark");
+          }
+        }
       });
     }
   }]);
