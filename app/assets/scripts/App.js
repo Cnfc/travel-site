@@ -3,6 +3,7 @@ import revealOnScroll from './modules/revealOnScroll';
 import $ from 'jquery';
 import StickyHeader from './modules/StickyHeader';
 import Modal from './modules/Modal';
+// import lazy from './modules/Modal';
 
 
 var mobileMenu = new MobileMenu();
