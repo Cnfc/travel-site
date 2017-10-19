@@ -2,6 +2,8 @@
   "name": "tutorial-site",
   "version": "1.0.0",
   "dependencies": {
+    "gulp-modernizr": "^1.0.0-alpha",
+    "gulp-svg2png": "^0.3.0",
     "jquery": "^3.2.1",
     "jquery-smooth-scroll": "^2.2.0",
     "lazysizes": "^4.0.0",
