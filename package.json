@@ -2,9 +2,12 @@
   "name": "tutorial-site",
   "version": "1.0.0",
   "dependencies": {
+    "gulp-cssnano": "^2.1.2",
     "gulp-imagemin": "^3.4.0",
     "gulp-modernizr": "^1.0.0-alpha",
+    "gulp-rev": "^8.0.0",
     "gulp-svg2png": "^0.3.0",
+    "gulp-uglify": "^3.0.0",
     "gulp-usemin": "^0.3.28",
     "jquery": "^3.2.1",
     "jquery-smooth-scroll": "^2.2.0",
