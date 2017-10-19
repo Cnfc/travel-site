@@ -455,7 +455,7 @@ a {
 }
 
 .large-hero__text-content {
-  padding-top: 88`px;
+  padding-top: 88px;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1261,7 +1261,7 @@ a {
 }
 
 .primary-nav {
-  padding-top: 10px;
+  padding-top: 15px;
 
 }
 
