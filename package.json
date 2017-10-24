@@ -17,7 +17,12 @@
   },
   "homepage": "https://github.com/Cnfc/travel-site#readme",
   "dependencies": {
+    "autoprefixer": "^7.1.6",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-watch": "^4.3.11",
     "jquery": "^3.2.1",
-    "normalize.css": "^7.0.0"
+    "normalize.css": "^7.0.0",
+    "postcss-nested": "^2.1.2"
   }
 }
