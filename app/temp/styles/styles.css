@@ -541,6 +541,28 @@ a {
   }
 }
 
+.btn--push {/*padding: 1.1rem 1.9rem;*/
+  outline: none;
+  border: none;
+  position: relative;
+  background: #2f5572;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 2 6px #d59541;
+  border-radius: 20px;
+}
+
+.btn--push:hover {
+  box-shadow: 0 4px #d59541;
+  top: 2px;
+}
+
+.btn--push:active {
+  box-shadow: 0 0 #d59541;
+  top: 6px;
+}
+
 .wrapper {
   overflow: hidden;
   padding-left: 18px;
